@@ -1,0 +1,414 @@
+/*   GENERAL STYLES  */
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+  color:black;
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 2.5em;
+}
+
+h1{
+  margin: 4vw 0;
+  font-size: 2.8em;
+  padding-bottom: .7em;
+}
+
+h2{
+  font-size: 2.7em;
+  padding: 2em 1em 1em 1em;
+  margin: 0;;
+}
+
+p, button, a, ul, blockquote, h3{
+  font-size: 1.7em;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0 2em 0;
+  text-align: left;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+}
+
+a{
+  text-decoration: none;
+  text-align: left;
+}
+
+button{
+  color: black;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
+  padding: 4vw 12vw;
+}
+/*   HEADER   */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5em;
+}
+
+header a > p {
+  display: none;
+}
+/* BURGER MENU */
+.dropbtn {
+  background-color: white;
+  color: white;
+  padding: 4px;
+  font-size: 1.5;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: white}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* INDEX */
+/* BLUE CARDS   */
+.blue{
+  background-color: #00ABD1;
+  color: white;
+  margin: 0;
+}
+
+.navigation li, a{
+  display: inline;
+  font-size: 1em;
+  text-align: left;
+}
+
+.hero-img{
+  padding: 3em;
+  width: 100%;
+}
+
+.hero-text{
+  margin: 0 1em;
+}
+
+.quotes {
+  margin: 2em 0;
+}
+
+.quotes img{
+  width: 3em;
+  margin: auto;
+}
+
+.quotes .card {
+  border: solid 1px rgb(223, 221, 221);
+  border-radius: 3px;
+  padding: 3em 1em;
+  margin: 1em;
+  box-shadow: 0 2px 2px 0 rgba(232, 230, 230, 0.589);
+}
+
+.card-quote{
+  color: grey;
+}
+
+.author{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2em 0 0 0;
+}
+
+.cercle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height:60px;
+  width:60px;
+  border-radius:50%;
+  margin-right:0px;
+}
+
+.nom{
+  text-align: left;
+  padding-left: 1em;
+}
+
+.cercle1{
+  background-color:#41926C;
+}
+
+.cercle2{
+  background-color:#007EF3;
+}
+
+.cercle3{
+  background-color:#4CA8CD;
+}
+
+.how h2, .how p{
+  text-align: left;
+  padding: 1em;
+  margin: 0;
+}
+
+.how-text{
+  padding: 3em 0em;
+}
+
+.how a{
+  color: white;
+  display: flex;
+  justify-content: start;
+  padding: 1em;
+}
+
+.values img {
+  background-color: #d5f8ff;
+  width: 100%;
+  padding: 2em 6em;
+}
+
+.values{
+  text-align: left;
+}
+
+.values h2 {
+  padding: 0;
+}
+
+.values-text{
+  padding: 3em 1em 3em 2em;
+}
+
+/*   WHITE CARDS   */
+.white {
+  background-color: white;
+}
+
+.quotes h2{
+  font-size: 2.3em;
+}
+
+.start{
+  background-color: rgb(246, 246, 246);
+  padding: 4vw 6vw;
+}
+
+.start p {
+  font-size: 7vw;
+  line-height: 1.5em;
+}
+
+.start button{
+  border-color: #00ABD1;
+  font-size: 1.5em;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: space-around;
+  margin: 10em 0 5em 0;
+  border-width: .5vw 0 .5vw 0;
+  border-style: double;
+  border-color: rgb(200, 199, 199);
+  padding: 10vw 6vw;
+}
+
+footer {
+  font-size: .8em;
+  line-height: 3em;
+  color:rgb(200, 199, 199);
+  border-width:5px 0 0 0;
+  border-style: double;
+  border-color: rgb(200, 199, 199);
+  padding: 10vw 6vw;
+}
+
+footer svg{
+  height: 6vw;
+}
+
+/* BIGGER SCREENS */
+
+@media (min-width: 321px) {
+  button {
+    margin: 0;
+    font-size: 1.2em;
+    border-radius: 3px;
+    padding: 1em 3em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  p{
+    font-size: 1.33em;
+  }
+  
+  header{
+    justify-content: flex-start;
+  }
+  header .logo{
+    order: -1;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .hero-img{
+    flex:2;
+    padding: 5em 15em 5em 4em;
+  }
+
+  .hero-text{
+    order: -1;
+    flex: 1;
+    margin: 5em 2em 20em 15em;
+  }
+
+  .hero h1{
+    font-size: 5em;
+    line-height: 1.3em;
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  .hero p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 2em 0 3em 0;
+  }
+
+  .quotes h2{
+    font-size: 1.8em;
+  }
+
+  .quotes blockquote{
+    font-size: 1.4em;
+    text-align: left;
+  }
+
+  .quotes .card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10em 4em 10em;
+  }
+
+  .quotes .card {
+    flex: 1;
+    margin: 1em;
+  }
+
+  .how{
+    display: flex;
+    text-align: center;
+  }
+
+  .how-text{
+    order: -1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+ 
+  .how p{
+    font-size: 1.33em;
+    padding: 0 10em;
+  }
+
+  .how a{
+    font-size: 1.4em;
+  }
+
+  .how-image{
+    flex: 1;
+  }
+
+  .values{
+    display: flex;
+  }
+
+  .values-text{
+    flex: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .values ul{
+    font-size: 1.33em;
+  }
+
+  .values img{
+    flex: 1;
+    padding: 7em 11em;
+
+  }
+
+  .start p{
+    font-size: 2em;
+  } 
+
+  .socialmedia{
+    justify-content: space-between;
+    padding: 5em 48em;
+    border-width: 1px;
+    border-color: #e4e3e3;
+    padding: 6em 32em 0 32em;
+  }
+
+  footer{
+    font-size: 1em;
+    padding: 0;
+    border-width:2px 0 0 0;
+  }
+
+}
